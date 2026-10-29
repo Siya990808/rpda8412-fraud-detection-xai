@@ -14,7 +14,7 @@ The analysis addresses three questions:
 
 - `notebooks/RPDA8412_Fraud_Detection_XAI.ipynb` - end-to-end research notebook.
 - `outputs/` - saved model metrics, confusion matrices, XAI summaries and report figures.
-- `report/ST10295312_RPDA8412_Final_Research_Report_Rubric_Aligned.docx` - final research report.
+- `report/ST10295312_RPDA8412_Final_Research_Report_GitHub_Linked.docx` - final research report, including the public repository link in its Research Artefacts Register.
 - `requirements.txt` - Python package requirements.
 
 ## Dataset
