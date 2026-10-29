@@ -1,0 +1,73 @@
+{
+  "dataset_path": "C:\\Users\\SIYAB\\OneDrive\\Documents\\ChatGPT\\Research Project Module\\data\\creditcard_kaggle.csv",
+  "sha256": "76274b691b16a6c49d3f159c883398e03ccd6d1ee12d9d8ee38f4b4b98551a89",
+  "raw_shape": [
+    284807,
+    31
+  ],
+  "missing_cells": 0,
+  "duplicate_handling": "not removed; repeated values may represent valid transactions",
+  "clean_shape": [
+    284807,
+    31
+  ],
+  "clean_class_counts": {
+    "0": 284315,
+    "1": 492
+  },
+  "train_shape": [
+    227845,
+    30
+  ],
+  "test_shape": [
+    56962,
+    30
+  ],
+  "test_class_counts": {
+    "0": 56864,
+    "1": 98
+  },
+  "balanced_training_shape": [
+    60000,
+    30
+  ],
+  "balanced_training_counts": {
+    "0": 30000,
+    "1": 30000
+  },
+  "scale_columns": [
+    "Time",
+    "Amount"
+  ],
+  "random_seed": 42,
+  "smote_k": 5,
+  "software": {
+    "python": "3.12.13",
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.9.0"
+  },
+  "timings_seconds": {
+    "Logistic Regression": {
+      "fit_seconds": 1.7646684646606445,
+      "predict_seconds": 0.03624105453491211
+    },
+    "Decision Tree": {
+      "fit_seconds": 9.445748090744019,
+      "predict_seconds": 0.06689977645874023
+    },
+    "Random Forest": {
+      "fit_seconds": 46.73891735076904,
+      "predict_seconds": 1.1483018398284912
+    },
+    "Linear SVM": {
+      "fit_seconds": 2.2479257583618164,
+      "predict_seconds": 0.053023338317871094
+    },
+    "k-NN": {
+      "fit_seconds": 0.17811799049377441,
+      "predict_seconds": 275.61192297935486
+    }
+  },
+  "elapsed_seconds": 563.4681358337402
+}

@@ -1,0 +1,111 @@
+{
+  "random_seed": 42,
+  "model": "Random Forest",
+  "training_rows": 60000,
+  "global_shap_rows": 500,
+  "confusion_matrix": {
+    "TN": 56768,
+    "FP": 96,
+    "FN": 11,
+    "TP": 87
+  },
+  "global_top_10": [
+    {
+      "Rank": 1,
+      "Feature": "V14",
+      "Mean absolute SHAP": 0.09781017323788524
+    },
+    {
+      "Rank": 2,
+      "Feature": "V4",
+      "Mean absolute SHAP": 0.07287089970403503
+    },
+    {
+      "Rank": 3,
+      "Feature": "V12",
+      "Mean absolute SHAP": 0.06457976772666503
+    },
+    {
+      "Rank": 4,
+      "Feature": "V10",
+      "Mean absolute SHAP": 0.056564846629539034
+    },
+    {
+      "Rank": 5,
+      "Feature": "V17",
+      "Mean absolute SHAP": 0.03795405251945715
+    },
+    {
+      "Rank": 6,
+      "Feature": "V11",
+      "Mean absolute SHAP": 0.036757730458398044
+    },
+    {
+      "Rank": 7,
+      "Feature": "V3",
+      "Mean absolute SHAP": 0.036739819600970405
+    },
+    {
+      "Rank": 8,
+      "Feature": "V16",
+      "Mean absolute SHAP": 0.02343499607896328
+    },
+    {
+      "Rank": 9,
+      "Feature": "V7",
+      "Mean absolute SHAP": 0.011849298019606276
+    },
+    {
+      "Rank": 10,
+      "Feature": "V9",
+      "Mean absolute SHAP": 0.010611625154225342
+    }
+  ],
+  "local_cases": [
+    {
+      "Case": "True positive",
+      "Test row": 840,
+      "Actual class": 1,
+      "Predicted class": 1,
+      "Fraud probability": 0.9999317965729512,
+      "SHAP top five": "V14, V10, V17, V12, V4",
+      "LIME top five": "V14, V10, V17, V4, V12",
+      "SHAP LIME top five Jaccard": 1.0,
+      "LIME repeat stability": 1.0
+    },
+    {
+      "Case": "False positive",
+      "Test row": 165,
+      "Actual class": 0,
+      "Predicted class": 1,
+      "Fraud probability": 0.9239967316378861,
+      "SHAP top five": "V14, V17, V10, V12, V4",
+      "LIME top five": "V14, V17, V12, V10, V3",
+      "SHAP LIME top five Jaccard": 0.6666666666666666,
+      "LIME repeat stability": 0.8
+    },
+    {
+      "Case": "True negative",
+      "Test row": 0,
+      "Actual class": 0,
+      "Predicted class": 0,
+      "Fraud probability": 0.0009047957710655355,
+      "SHAP top five": "V4, V14, V10, V11, V12",
+      "LIME top five": "V4, V14, V10, V11, V12",
+      "SHAP LIME top five Jaccard": 1.0,
+      "LIME repeat stability": 0.8666666666666668
+    },
+    {
+      "Case": "False negative",
+      "Test row": 17046,
+      "Actual class": 1,
+      "Predicted class": 0,
+      "Fraud probability": 0.00376577395674342,
+      "SHAP top five": "V4, V12, V14, V3, V11",
+      "LIME top five": "V4, V12, V14, V3, V17",
+      "SHAP LIME top five Jaccard": 0.6666666666666666,
+      "LIME repeat stability": 0.7333333333333333
+    }
+  ],
+  "interpretive_limit": "V1-V28 are anonymised PCA components; attribution indicates model influence, not business meaning or causation."
+}

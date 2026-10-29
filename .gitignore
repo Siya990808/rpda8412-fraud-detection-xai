@@ -1,0 +1,17 @@
+# Raw data and local environments
+data/*.csv
+!data/.gitkeep
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Notebook and editor files
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
